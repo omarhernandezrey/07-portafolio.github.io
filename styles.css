@@ -2,7 +2,7 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
+  background-color: #1f1f1f;
   background-image: url("data:image/svg+xml...");
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,6 +22,7 @@ header img {
   height: 150px;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
 }
 #desarrollador {
   color: #fff;
@@ -40,6 +41,7 @@ nav ul {
   justify-content: center;
   background: #333;
   color: white;
+  margin-bottom: 150px;
 }
 
 nav ul li {
@@ -53,7 +55,13 @@ nav ul li a {
 }
 
 section {
-  background-color: #6EFFB1;
+  background-color: #727272;
+  background-color: #151B44;
+background: #fff;
+background-attachment: fixed;
+background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
@@ -64,6 +72,7 @@ h2 {
   font-size: 1.8em;
   margin-bottom: 0.5em;
 }
+
 
 p, ul {
   line-height: 1.5;
