@@ -40,11 +40,12 @@ nav ul {
   list-style-type: none;
   margin: 4px;
   padding: 0;
-  display: flex;
+  display:flex;
   justify-content: center;
   background: #333;
   color: white;
   margin-bottom: 150px;
+  
 }
 
 nav ul li {
