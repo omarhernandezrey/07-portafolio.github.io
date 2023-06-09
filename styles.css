@@ -76,6 +76,13 @@ h2 {
   font-size: 1.8em;
   margin-bottom: 0.5em;
 }
+#biografia p {
+  color: black; /* Cambia el color del texto a rojo */
+  font-size: 18px; /* Cambia el tamaño de fuente a 18 píxeles */
+  line-height: 1.5; /* Ajusta el espaciado entre líneas */
+  /* Agrega otros estilos según tus preferencias */
+  text-align: justify;
+}
 .container{
   display: grid;
   grid-template-columns: 250px 250px 250px;
