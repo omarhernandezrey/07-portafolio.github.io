@@ -113,6 +113,7 @@ h2 {
 	overflow: hidden;
 	transition: all 0.3s ease-out, transform 0.3s ease-in-out;
 	cursor: help;
+	cursor: pointer;
 }
 
 .contenedor-cards .contenedor-card-item:hover {
