@@ -47,7 +47,7 @@ header {
     display: block;
 }
 /* Estilos para dispositivos móviles */
-@media (max-width: 640px) {
+@media (max-width: 740px) {
     .header-content {
 		left: 41%; /* Ajuste la posición a la izquierda */
         transform: translateX(-50%) translateY(-50%); /* Centra verticalmente y ajusta horizontalmente */
@@ -119,7 +119,7 @@ nav {
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 640px) {
+@media (max-width: 740px) {
     .navbar-left {
         display: flex;
         align-items: center;
@@ -347,7 +347,7 @@ nav {
 	}
   }
   
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 640px) {
 	.contenedor-cards .contenedor-card-item {
 	  width: 60%;
 	  height: 300px;
