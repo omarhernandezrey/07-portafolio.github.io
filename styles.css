@@ -1,150 +1,215 @@
+/* Estilos generales */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #1f1f1f;
-  background-image: url("data:image/svg+xml...");
-  background-size: cover;
-  background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Estilos para el encabezado y la navegación */
 header {
-  background-image: url("imagenes/computadora.jpg");
-  background-size: cover;  /* Asegura que la imagen cubra todo el espacio del header */
-  background-position: center; /* Centra la imagen en el header */
-  color: white; /* Cambia el color de texto a blanco para mejor visibilidad sobre el fondo */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Agrega una sombra a los textos para mejorar la visibilidad */
-  padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+    position: relative;
+    margin-bottom: 20px;
+}
+.header-background {
+    position: relative;
 }
 
-header img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-}
-#desarrollador {
-  color: #fff;
-}
-#desarrollador:hover {
-  color:red;
+.header-content {
+    position: absolute;
+	top: 53%;
+	left: 21%; /* Ajuste para mantener la posición a la izquierda */
+    transform: translate(-50%, -50%);
+    text-align: left; /* Cambio de alineación a la izquierda */
+    color: #fff;
 }
 
-h1 {
-  font-size: 2.2em;
-  margin-bottom: 0.5em;
+.mi-foto {
+    width: 120px; /* Ajuste el tamaño de la foto */
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all 0.3s; /* Transición para el cambio de tamaño */
 }
 
-:root {
-	--white: #FFFFFF;
-	--black: #000000;
-	--very-light-pink: #C7C7C7;
-	--text-input-field: #F7F7F7;
-	--hospital-green: #ACD9B2;
-	--sm: 14px;
-	--md: 16px;
-	--lg: 18px;
-  }
-  nav {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 24px;
-	border-bottom: 1px solid var(--very-light-pink);
-  }
-  .menu {
-	display: none;
-  }
-  .logo {
-	width: 100px;
-  }
-  .navbar-left ul,
-  .navbar-right ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	height: 60px;
-  }
-  .navbar-left {
-	display: flex;
-  }
-  .navbar-left ul {
-	margin-left: 12px;
-  }
-  .navbar-left ul li a,
-  .navbar-right ul li a {
-	text-decoration: none;
-	color: var(--very-light-pink);
-	border: 1px solid var(--white);
-	padding: 8px;
-	border-radius: 8px;
-  }
-  .navbar-left ul li a:hover,
-  .navbar-right ul li a:hover {
-	border: 1px solid var(--hospital-green);
-	color: var(--hospital-green);
-  }
-  .navbar-email {
-	color: var(--very-light-pink);
-	font-size: var(--sm);
-	margin-right: 12px;
-  }
-  .navbar-shopping-cart {
-	position: relative;
-  }
-  .navbar-shopping-cart div {
-	width: 16px;
-	height: 16px;
-	background-color: var(--hospital-green);
-	border-radius: 50%;
-	font-size: var(--sm);
-	font-weight: bold;
-	position: absolute;
-	top: -6px;
-	right: -3px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-  @media (max-width: 640px) {
-	.menu {
-	  display: block;
-	}
-	.navbar-left ul {
-	  display: none;
-	}
-	.navbar-email {
-	  display: none;
-	}
-  }
-
-section {
-  background-color: #727272;
-  background-color: #151B44;
-background: #fff;
-background-attachment: fixed;
-background-size: cover;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.header-content h1 {
+    font-size: 24px; /* Ajuste de tamaño para pantallas pequeñas */
+    margin: 5px 0;
 }
 
-h2 {
-  font-size: 1.8em;
-  margin-bottom: 0.5em;
+.header-content p {
+    font-size: 16px; /* Ajuste de tamaño para pantallas pequeñas */
+    margin: 0;
 }
+
+.img-fondo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 640px) {
+    .header-content {
+		left: 41%; /* Ajuste la posición a la izquierda */
+        transform: translateX(-50%) translateY(-50%); /* Centra verticalmente y ajusta horizontalmente */
+        width: 80%; /* Ajuste el ancho */
+    }
+
+    .mi-foto {
+        width: 100px; /* Ajusta el tamaño de la foto */
+        height: 100px;
+    }
+}
+
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo {
+    width: 68px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu {
+    display: none;
+    width: 60px;
+    height: 31px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 640px) {
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 10px; /* Reduce el padding para un diseño más compacto */
+    }
+
+    .menu {
+        display: block;
+        margin-right: 10px; /* Ajusta el margen derecho del menú */
+    }
+
+    .logo {
+        margin-left: 10px; /* Ajusta el margen izquierdo del logo */
+        margin-right: auto; /* Mueve el logo hacia la derecha */
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+
+/* Estilos para la sección de biografía */
+#biografia {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+#fondo-biografia {
+	height: auto!important; 
+
+}
+
+#biografia h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
 #biografia p {
-  color: black; /* Cambia el color del texto a rojo */
-  font-size: 18px; /* Cambia el tamaño de fuente a 18 píxeles */
-  line-height: 1.5; /* Ajusta el espaciado entre líneas */
-  /* Agrega otros estilos según tus preferencias */
-  text-align: justify;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
 }
+
+#biografia p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#proyectos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#proyectos p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+#proyectos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#proyectos ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#proyectos ul li:before {
+    content: '\2022'; /* Código Unicode para el símbolo de viñeta */
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 
 .contenedor {
 	position: relative;
@@ -310,45 +375,133 @@ h2 {
 	  height: 300px;
 	}
   }
-  
-
-
-p, ul {
-  line-height: 1.5;
-  color: #333;
+  /* Estilos para la sección de habilidades */
+#habilidades {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+#habilidades h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-footer p {
-  margin-bottom: 20px;
+#habilidades p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
 }
 
-footer ul {
-  list-style-type: none;
-  padding: 0;
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-footer ul li {
-  display: inline;
-  margin: 0 10px;
+#habilidades ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#habilidades ul li:before {
+    content: '\2022'; /* Código Unicode para el símbolo de viñeta */
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#habilidades p:last-child {
+    margin-bottom: 0;
+}
+
+
+  /* Estilos para la sección de contacto */
+#contacto {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contacto p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacto ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#contacto a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contacto a:hover {
+    color: #0056b3;
+}
+
+
+  /*footer*/
+  /* Estilos del footer */
+.footer {
+    background-color: #292b2c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .social-icon {
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
+    display: block;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
 }
 
 .social-icon img {
-  width: 40px;
-  height: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
 }

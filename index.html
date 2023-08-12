@@ -6,46 +6,30 @@
 </head>
 <body>
   <header>
+    <div class="header-background">
+        <img src="./imagenes/computadora.jpg" alt="img-fondo" class="img-fondo">
+        <div class="header-content">
+            <img src="./imagenes/foto 3x4.jpg" alt="Mi Foto" class="mi-foto">
+            <h1>Omar Hernandez Rey</h1>
+            <p>Desarrollador de Sistemas de Información</p>
+        </div>
+    </div>
     <nav>
-      <img src="./icons/icon_menu.svg" alt="menu" class="menu">
-  
-      <div class="navbar-left">
-        <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-  
-        <ul>
-          <li>
-            <a href="/">All</a>
-          </li>
-          <li>
-            <a href="/">Clothes</a>
-          </li>
-          <li>
-            <a href="/">Electronics</a>
-          </li>
-          <li>
-            <a href="/">Furnitures</a>
-          </li>
-          <li>
-            <a href="/">Toys</a>
-          </li>
-          <li>
-            <a href="/">Others</a>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="navbar-right">
-        <ul>
-          <li class="navbar-email">platzi@example.com</li>
-          <li class="navbar-shopping-cart">
-            <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
-            <div>2</div>
-          </li>
-        </ul>
-      </div>
+        <img src="./imagenes/logo.jpg" alt="logo" class="logo">
+        <div class="navbar-left">
+            <img src="./imagenes/iconos/icon_menu.svg" alt="menu" class="menu">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
   <section id="biografia">
+    
     <h2>Biografía</h2>
     <p>Soy un apasionado desarrollador de sistemas de información con experiencia en HTML, CSS, JavaScript, Node.js, MySQL y Git. Me encanta resolver problemas y trabajar en equipo. Soy una persona activa, responsable y puntual, siempre en busca de oportunidades para aprender y crecer tanto a nivel personal como profesional. Mi objetivo es contribuir al desarrollo de sistemas eficientes y de alta calidad.</p>
   </section>
@@ -54,8 +38,6 @@
 
     <h2>Proyectos</h2>
     <p>A lo largo de mi carrera como desarrollador, he trabajado en diversos proyectos destacados, incluyendo:</p>
-    <body>
-	
       <div class="contenedor">
           <div class="contenedor-cards">            
             <div class="contenedor-card-item">
@@ -132,14 +114,6 @@
             </div>
            </div>
       </div>
-    <ul>
-      <li>"Desarrollo de un sistema para ingresar los turnos realizados, con el fin de calcular el pago mensual. Además, arroja un calendario que indica los días en que la enfermera realizó los turnos, incluyendo el nombre y si son turnos diurnos, nocturnos y festivos."</li>
-      
-      <a href="https://omarhernandezrey.github.io/calculadoraDePagoTurnosEmfermeria.github.io/">Go turnos pago de enfermeria</a>
-     
-      <li>Creación de una aplicación web de reserva de citas para una clínica médica.</li>
-      <li>Implementación de un sitio web responsivo para una agencia de viajes.</li>
-    </ul>
   </section>
 
   <section id="habilidades">
@@ -158,56 +132,38 @@
     <h2>Contacto</h2>
     <p>Puedes contactarme a través de los siguientes medios:</p>
     <ul>
-      <li>Email: omar@example.com</li>
-      <li>Teléfono: +1234567890</li>
+      <li>Email: hernandezreyomar@gmail.com</li>
+      <li>Teléfono: +57 3219052878</li>
       <li>LinkedIn: <a href="https://www.linkedin.com/in/omarhernandez" target="_blank">linkedin.com/in/omarhernandez</a></li>
     </ul>
   </section>
 
-  <footer>
-    <p>&copy; 2023 Omar Hernandez Rey</p>
- 
-    <ul class="social-icons">
-      <li>
-          <a href="https://www.linkedin.com/in/omar-hernandez-a061a01a4/" class="social-icon" id="Linkedin">
-              <!-- Enlace a LinkedIn -->
-              <img src="imagenes/iconos/linkedin.png" alt="linkedin">
-              <!-- Icono de LinkedIn con la ruta "imagenes/iconos/linkedin.png" y un atributo alt para accesibilidad -->
-          </a>
-      </li>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/omar-hernandez-a061a01a4/" class="social-icon" id="Linkedin">
+                <img src="imagenes/iconos/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/omarhernandezrey" class="social-icon" id="Github">
+                <img src="imagenes/iconos/github.png" alt="GitHub">
+            </a>
+            <a href="https://twitter.com/o43503368" class="social-icon" id="Twitter">
+                <img src="imagenes/iconos/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/channel/UCTZFAzSm3V3Mt3v1Xqv9Oxg" class="social-icon" id="YouTube">
+                <img src="imagenes/iconos/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://platzi.com/p/omarrey/" class="social-icon" id="Platzi">
+                <img src="imagenes/iconos/platzi.png" alt="Platzi">
+            </a>
+        </div>
+    </div>
+    <div class="footer-copy">
+        &copy; 2023 Omar Hernandez Rey
+    </div>
+</footer>
 
-      <li>
-          <a href="https://github.com/omarhernandezrey" class="social-icon" id="Github">
-              <!-- Enlace a GitHub -->
-              <img src="imagenes/iconos/github.png" alt="Github">
-              <!-- Icono de GitHub con la ruta "imagenes/icons/github.png" y un atributo alt para accesibilidad -->
-          </a>
-      </li>
 
-      <li>
-          <a href="https://twitter.com/o43503368" class="social-icon" id="Twitter">
-              <!-- Enlace a Twitter -->
-              <img src="imagenes/iconos/twitter.png" alt="Twitter">
-              <!-- Icono de Twitter con la ruta "imagenes/iconos/twitter.png" y un atributo alt para accesibilidad -->
-          </a>
-      </li>
-
-      <li>
-          <a href="https://www.youtube.com/channel/UCTZFAzSm3V3Mt3v1Xqv9Oxg" class="social-icon" id="YouTube">
-              <!-- Enlace a YouTube -->
-              <img src="imagenes/iconos/youtube.png" alt="YouTube">
-              <!-- Icono de YouTube con la ruta "imagenes/iconos/youtube.png" y un atributo alt para accesibilidad -->
-          </a>
-      </li>
-
-      <li>
-          <a href="https://platzi.com/p/omarrey/" class="social-icon" id="Platzi">
-              <!-- Enlace a Platzi -->
-              <img src="imagenes/iconos/platzi.png" alt="Platzi">
-              <!-- Icono de Platzi con la ruta "imagenes/iconos/platzi.png" y un atributo alt para accesibilidad -->
-          </a>
-      </li>
-  </ul>
-  </footer>
+  <script src="./main.js"></script>
 </body>
 </html>
