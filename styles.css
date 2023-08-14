@@ -87,15 +87,7 @@ nav {
   border-radius: 50%;
 }
 
-.menu {
-  display: none;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  margin-right: 20px;
-  color: white;
-  border-radius: 50%;
-}
+/*Boton*/
 
 .nav-links {
   list-style: none;
@@ -118,6 +110,57 @@ nav {
 .nav-links a:hover {
   color: #007bff;
 }
+#menu-check{
+  display: none;
+}
+#menu-check + label{
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-menu{
+  width: 40px;
+  height: 40px;
+  /*border: 1px solid white;*/
+  position: relative;
+  border-radius: 50%;
+  display: none;
+}
+.btn-menu > div{
+  position: absolute;
+  width: 60%;
+  height: 10%;
+  left: 20%;
+  background-color: white;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.stick1{
+  top: 22%;
+}
+.stick2{
+  top: 45%;
+}
+.stick3{
+  bottom: 22%;
+}
+#menu-check:checked + label .stick1{
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 45%;
+  width: 70%;
+  left: 15%;
+}
+#menu-check:checked + label .stick2{
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 45%;
+  width: 70%;
+  left: 15%;
+}
+#menu-check:checked + label .stick3{
+  height: 0;
+}
 
 /* Estilos para dispositivos móviles */
 /* Estilos para dispositivos móviles con ancho de pantalla igual o menor a 640px */
@@ -132,7 +175,7 @@ nav {
   }
 
   /* Estilos para el menú */
-  .menu {
+  .btn-menu {
     display: block;
     margin-right: 3px; /* Ajusta el margen derecho del menú */
   }
