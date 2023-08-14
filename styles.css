@@ -89,11 +89,12 @@ nav {
 
 .menu {
   display: none;
-  width: 60px;
-  height: 31px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   margin-right: 20px;
   color: white;
+  border-radius: 50%;
 }
 
 .nav-links {
@@ -133,7 +134,7 @@ nav {
   /* Estilos para el menú */
   .menu {
     display: block;
-    margin-right: 50px; /* Ajusta el margen derecho del menú */
+    margin-right: 3px; /* Ajusta el margen derecho del menú */
   }
 
   /* Estilos para el logo */
