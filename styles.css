@@ -47,7 +47,7 @@ left: 21%; /* Ajuste para mantener la posición a la izquierda */
   display: block;
 }
 /* Estilos para dispositivos móviles */
-@media (max-width: 640px) {
+@media (max-width: 800px) {
   .header-content {
   left: 41%; /* Ajuste la posición a la izquierda */
       transform: translateX(-50%) translateY(-50%); /* Centra verticalmente y ajusta horizontalmente */
@@ -119,27 +119,32 @@ nav {
 }
 
 /* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles con ancho de pantalla igual o menor a 640px */
 @media (max-width: 640px) {
+  /* Estilos para el contenedor de la barra de navegación */
   .navbar-left {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0;
-      padding: 0 10px; /* Reduce el padding para un diseño más compacto */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 10px; /* Reduce el padding para un diseño más compacto */
   }
 
+  /* Estilos para el menú */
   .menu {
-      display: block;
-      margin-right: 10px; /* Ajusta el margen derecho del menú */
+    display: block;
+    margin-right: 50px; /* Ajusta el margen derecho del menú */
   }
 
+  /* Estilos para el logo */
   .logo {
-      margin-left: 10px; /* Ajusta el margen izquierdo del logo */
-      margin-right: auto; /* Mueve el logo hacia la derecha */
+    margin-left: 10px; /* Ajusta el margen izquierdo del logo */
+    margin-right: auto; /* Mueve el logo hacia la derecha */
   }
 
+  /* Ocultar enlaces de navegación */
   .nav-links {
-      display: none;
+    display: none;
   }
 }
 
