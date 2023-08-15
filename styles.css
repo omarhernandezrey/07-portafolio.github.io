@@ -16,28 +16,28 @@ header {
 
 .header-content {
   position: absolute;
-top: 53%;
-left: 21%; /* Ajuste para mantener la posición a la izquierda */
+  top: 53%;
+  left: 21%;
   transform: translate(-50%, -50%);
-  text-align: left; /* Cambio de alineación a la izquierda */
+  text-align: left;
   color: #fff;
 }
 
 .mi-foto {
-  width: 120px; /* Ajuste el tamaño de la foto */
+  width: 120px;
   height: 120px;
   border-radius: 50%;
   margin-bottom: 10px;
-  transition: all 0.3s; /* Transición para el cambio de tamaño */
+  transition: all 0.3s;
 }
 
 .header-content h1 {
-  font-size: 24px; /* Ajuste de tamaño para pantallas pequeñas */
+  font-size: 24px;
   margin: 5px 0;
 }
 
 .header-content p {
-  font-size: 16px; /* Ajuste de tamaño para pantallas pequeñas */
+  font-size: 16px;
   margin: 0;
 }
 
@@ -46,21 +46,20 @@ left: 21%; /* Ajuste para mantener la posición a la izquierda */
   height: auto;
   display: block;
 }
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 800px) {
   .header-content {
-  left: 41%; /* Ajuste la posición a la izquierda */
-      transform: translateX(-50%) translateY(-50%); /* Centra verticalmente y ajusta horizontalmente */
-      width: 80%; /* Ajuste el ancho */
+    left: 41%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
   }
 
   .mi-foto {
-      width: 100px; /* Ajusta el tamaño de la foto */
-      height: 100px;
+    width: 100px;
+    height: 100px;
   }
 }
-
-
 
 nav {
   position: absolute;
@@ -87,8 +86,6 @@ nav {
   border-radius: 50%;
 }
 
-/*Boton*/
-
 .nav-links {
   list-style: none;
   margin: 0;
@@ -110,57 +107,65 @@ nav {
 .nav-links a:hover {
   color: #007bff;
 }
-#menu-check{
+
+#menu-check {
   display: none;
 }
-#menu-check + label{
+
+#menu-check + label {
   cursor: pointer;
   display: inline-block;
 }
-.btn-menu{
+
+.btn-menu {
   width: 40px;
   height: 40px;
-  /*border: 1px solid white;*/
   position: relative;
   border-radius: 50%;
   display: none;
 }
-.btn-menu > div{
+
+.btn-menu > div {
   position: absolute;
   width: 60%;
   height: 10%;
   left: 20%;
   background-color: white;
   border-radius: 3px;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.stick1{
+
+.stick1 {
   top: 22%;
 }
-.stick2{
+
+.stick2 {
   top: 45%;
 }
-.stick3{
+
+.stick3 {
   bottom: 22%;
 }
-#menu-check:checked + label .stick1{
-  -webkit-transform: rotate(45deg);
+
+#menu-check:checked + label .stick1 {
   transform: rotate(45deg);
   top: 45%;
   width: 70%;
   left: 15%;
 }
-#menu-check:checked + label .stick2{
-  -webkit-transform: rotate(-45deg);
+
+#menu-check:checked + label .stick2 {
   transform: rotate(-45deg);
   top: 45%;
   width: 70%;
   left: 15%;
 }
-#menu-check:checked + label .stick3{
+
+#menu-check:checked + label .stick3 {
   height: 0;
 }
+
+/* ... (otros estilos) ... */
 
 /* Estilos para dispositivos móviles */
 /* Estilos para dispositivos móviles con ancho de pantalla igual o menor a 640px */
@@ -171,19 +176,19 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    padding: 0 10px; /* Reduce el padding para un diseño más compacto */
+    padding: 0 10px;
   }
 
   /* Estilos para el menú */
   .btn-menu {
     display: block;
-    margin-right: 3px; /* Ajusta el margen derecho del menú */
+    margin-right: 3px;
   }
 
   /* Estilos para el logo */
   .logo {
-    margin-left: 10px; /* Ajusta el margen izquierdo del logo */
-    margin-right: auto; /* Mueve el logo hacia la derecha */
+    margin-left: 10px;
+    margin-right: auto;
   }
 
   /* Ocultar enlaces de navegación */
@@ -192,7 +197,57 @@ nav {
   }
 }
 
+/*Menu mobile*/
+.inactive {
+  display: none;
+}
 
+.desktop-menu {
+  position: absolute;
+  top: 74px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100px;
+  height: auto;
+  padding: 20px 20px 0 20px;
+}
+
+.desktop-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-menu ul li {
+  text-align: end;
+}
+
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
+  font-weight: bold;
+}
+
+.desktop-menu ul li:last-child {
+  padding-top: 20px;
+  border-top: 1px solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a {
+  font-size: var(--sm);
+}
+
+.desktop-menu ul li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .inactive {
+    display: none;
+  }
+}
 /* Estilos para la sección de biografía */
 #biografia {
   background-color: #ffffff;
