@@ -248,6 +248,11 @@ nav {
     display: none;
   }
 }
+@media (min-width: 641px) {
+  .desktop-menu {
+    display: none;
+  }
+}
 /* Estilos para la sección de biografía */
 #biografia {
   background-color: #ffffff;
